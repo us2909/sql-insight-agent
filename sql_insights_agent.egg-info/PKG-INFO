@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: sql-insights-agent
+Version: 0.1.0
+Summary: LLM-Powered SQL Insights Agent
+Requires-Python: >=3.11
+Requires-Dist: pandas==2.2.2
+Requires-Dist: sqlalchemy==2.0.31
+Requires-Dist: psycopg[binary]==3.1.19
+Requires-Dist: python-dotenv==1.0.1

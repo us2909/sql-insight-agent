@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+sql_insights_agent.egg-info/PKG-INFO
+sql_insights_agent.egg-info/SOURCES.txt
+sql_insights_agent.egg-info/dependency_links.txt
+sql_insights_agent.egg-info/requires.txt
+sql_insights_agent.egg-info/top_level.txt

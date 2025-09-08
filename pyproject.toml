@@ -1,0 +1,16 @@
+[project]
+name = "sql-insights-agent"
+version = "0.1.0"
+description = "LLM-Powered SQL Insights Agent"
+requires-python = ">=3.11"
+dependencies = [
+    # For data handling and database connection
+    "pandas==2.2.2",
+    "sqlalchemy==2.0.31",
+    "psycopg[binary]==3.1.19", # Postgres driver for Python
+    "python-dotenv==1.0.1",    # For managing .env files
+    "openpyxl==3.1.2",         # ADD THIS LINE for reading Excel files
+]
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
