@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: raw_data
+    schema: public # This is the schema where raw_orders lives
+    tables:
+      - name: raw_orders

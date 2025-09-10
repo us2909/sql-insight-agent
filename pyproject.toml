@@ -9,7 +9,9 @@ dependencies = [
     "sqlalchemy==2.0.31",
     "psycopg[binary]==3.1.19", # Postgres driver for Python
     "python-dotenv==1.0.1",    # For managing .env files
-    "openpyxl==3.1.2",         # ADD THIS LINE for reading Excel files
+    "openpyxl==3.1.2",
+    "dbt-core==1.8.2",         
+    "dbt-postgres==1.8.2",        
 ]
 [build-system]
 requires = ["setuptools>=61.0"]

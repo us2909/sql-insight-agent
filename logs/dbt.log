@@ -1,0 +1,100 @@
+[0m21:38:08.993222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002383F3E89B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002383EBCD580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002383EB16240>]}
+
+
+============================== 21:38:08.997752 | 2051e7d8-cb68-40b2-93b6-7d671a87edd9 ==============================
+[0m21:38:08.997752 [info ] [MainThread]: Running with dbt=1.10.11
+[0m21:38:08.997752 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt init dbt_project', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'empty': 'None', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\uchit\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m21:38:09.009561 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\uchit\.dbt
+[0m21:38:09.011561 [debug] [MainThread]: Starter project path: C:\dev\sql-insights-agent\.venv\Lib\site-packages\dbt\include\starter_project
+[0m21:38:09.018854 [info ] [MainThread]: 
+Your new dbt project "dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:38:09.018854 [info ] [MainThread]: Setting up your profile.
+[0m21:42:00.776253 [error] [MainThread]: Encountered an error:
+
+[0m21:42:00.781799 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\dev\sql-insights-agent\.venv\Lib\site-packages\dbt\cli\requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\dev\sql-insights-agent\.venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\dev\sql-insights-agent\.venv\Lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\dev\sql-insights-agent\.venv\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "C:\dev\sql-insights-agent\.venv\Lib\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\dev\sql-insights-agent\.venv\Lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\dev\sql-insights-agent\.venv\Lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\dev\sql-insights-agent\.venv\Lib\site-packages\dbt\task\init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\dev\sql-insights-agent\.venv\Lib\site-packages\click\termui.py", line 168, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\dev\sql-insights-agent\.venv\Lib\site-packages\click\termui.py", line 151, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m21:42:00.783815 [debug] [MainThread]: Command `dbt init` failed at 21:42:00.783815 after 231.94 seconds
+[0m21:42:00.785317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002383F10EE70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023840631A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002383F222720>]}
+[0m21:42:00.786325 [debug] [MainThread]: Flushing usage events
+[0m21:42:01.804863 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:42:05.039585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156AD53CF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156AB723D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156ADD42F30>]}
+
+
+============================== 21:42:05.041587 | 1e054cd2-2c52-4f80-9a2c-60542b4a7b75 ==============================
+[0m21:42:05.041587 [info ] [MainThread]: Running with dbt=1.10.11
+[0m21:42:05.041587 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt init dbt_project', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'empty': 'None', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\uchit\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m21:42:05.052257 [info ] [MainThread]: A project called dbt_project already exists here.
+[0m21:42:05.053261 [debug] [MainThread]: Command `dbt init` succeeded at 21:42:05.053261 after 0.16 seconds
+[0m21:42:05.053261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156AB350980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156AEFFDBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156AAC55250>]}
+[0m21:42:05.054463 [debug] [MainThread]: Flushing usage events
+[0m21:42:05.597139 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:42:58.231844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280D687E5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280D782A120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280D4667E60>]}
+
+
+============================== 21:42:58.235888 | 3c6a6df0-5a68-48b6-9283-4d039789693c ==============================
+[0m21:42:58.235888 [info ] [MainThread]: Running with dbt=1.10.11
+[0m21:42:58.235888 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt init dbt_project', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\uchit\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m21:42:58.246944 [debug] [MainThread]: Starter project path: C:\dev\sql-insights-agent\.venv\Lib\site-packages\dbt\include\starter_project
+[0m21:42:58.265674 [info ] [MainThread]: 
+Your new dbt project "dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:42:58.265674 [info ] [MainThread]: Setting up your profile.
+[0m21:44:10.429734 [info ] [MainThread]: Profile dbt_project written to C:\Users\uchit\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:44:10.431734 [debug] [MainThread]: Command `dbt init` succeeded at 21:44:10.431734 after 72.37 seconds
+[0m21:44:10.433246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280D782A120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280D79633B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280D79A9A30>]}
+[0m21:44:10.434267 [debug] [MainThread]: Flushing usage events
+[0m21:44:11.385643 [debug] [MainThread]: An error was encountered while trying to flush usage events
