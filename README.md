@@ -39,6 +39,7 @@ Follow these instructions to set up and run the project locally.
 # Replace YOUR_USERNAME with your actual GitHub username
 git clone [https://github.com/YOUR_USERNAME/sql-insights-agent.git](https://github.com/YOUR_USERNAME/sql-insights-agent.git)
 cd sql-insights-agent
+```
 
 ### 2. Set Up Environment Variables
 
@@ -63,6 +64,7 @@ source .venv/bin/activate
 
 # Install all required packages from the project configuration
 pip install -e .
+```
 
 ### 4. Run Backend Services and Data Pipeline
 
@@ -80,9 +82,11 @@ python app/scripts/seed_db.py
 cd dbt_project
 dbt build
 cd ..
+```
 
 ### 5. Run the Streamlit Application
 
 ```bash
 # Make sure you are in the root directory of the project
 streamlit run app/app.py
+```
