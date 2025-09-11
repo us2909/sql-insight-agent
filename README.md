@@ -4,7 +4,7 @@ A conversational analytics tool that transforms natural language business questi
 
 ## Demo
 
-
+<img width="809" height="389" alt="Screenshot 2025-09-11 001714" src="https://github.com/user-attachments/assets/d3ba021c-57fe-4e8d-b4e3-c804af9673a0" />
 
 ## Key Features
 
