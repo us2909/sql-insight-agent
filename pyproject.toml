@@ -11,7 +11,12 @@ dependencies = [
     "python-dotenv==1.0.1",    # For managing .env files
     "openpyxl==3.1.2",
     "dbt-core==1.8.2",         
-    "dbt-postgres==1.8.2",        
+    "dbt-postgres==1.8.2",  
+    "streamlit==1.36.0",       
+    "openai==1.35.3",          
+    "langchain==0.2.6",         
+    "langchain-openai==0.1.9",       
+    "langchain-community==0.2.6",
 ]
 [build-system]
 requires = ["setuptools>=61.0"]
