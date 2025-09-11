@@ -5,7 +5,6 @@ A conversational analytics tool that transforms natural language business questi
 ## Demo
 
 
-*(**TODO:** Replace this line with a screenshot of your running application. This is the most important part of the README for a portfolio project!)*
 
 ## Key Features
 
